@@ -31,7 +31,7 @@ export function TransactionForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid grid-cols-2 gap-4">
-        <Select value={type} onValueChange={setType}>
+        <Select value={type} onValueChange={(value: string) => setType(value as "expense" | "income")}>
           <SelectTrigger>
             <SelectValue placeholder="Type" />
           </SelectTrigger>

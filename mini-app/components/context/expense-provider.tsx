@@ -59,7 +59,7 @@ export function ExpenseProvider({ children }: { children: React.ReactNode }) {
     setTransactions((prev) => prev.filter((t) => t.id !== id));
   }, []);
 
-  const editTransaction = useCallback((id: string) => {
+  const editTransaction = useCallback((_id: string) => {
     // placeholder for edit logic
   }, []);
 
